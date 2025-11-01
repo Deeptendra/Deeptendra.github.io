@@ -139,39 +139,6 @@ nav .container {
     margin-bottom: 1rem;
 }
 
-/* Experience Section */
-.experience-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-}
-
-.experience-item {
-    background-color: var(--bg-color);
-    padding: 2rem;
-    border-radius: 0.5rem;
-    box-shadow: var(--shadow);
-}
-
-.experience-item h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: var(--primary-color);
-}
-
-.skills-list {
-    list-style: none;
-}
-
-.skills-list li {
-    padding: 0.5rem 0;
-    border-bottom: 1px solid var(--border-color);
-}
-
-.skills-list li:last-child {
-    border-bottom: none;
-}
-
 /* Projects Section */
 .projects-grid {
     display: grid;
@@ -292,8 +259,7 @@ footer {
         font-size: 2rem;
     }
 
-    .projects-grid,
-    .experience-content {
+    .projects-grid {
         grid-template-columns: 1fr;
     }
 }
