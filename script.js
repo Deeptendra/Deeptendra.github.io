@@ -65,4 +65,9 @@ document.addEventListener('DOMContentLoaded', () => {
             ? `${document.lastModified} UTC`
             : modifiedDate.toUTCString().replace('GMT', 'UTC');
     }
+
+    const copyrightYearElement = document.getElementById('copyright-year');
+    if (copyrightYearElement) {
+        copyrightYearElement.textContent = String(new Date().getFullYear());
+    }
 });
