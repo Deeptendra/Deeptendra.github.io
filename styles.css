@@ -315,6 +315,12 @@ footer {
     text-align: center;
 }
 
+.last-updated {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    opacity: 0.85;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .nav-links {
