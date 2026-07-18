@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (lastUpdatedElement) {
         const modifiedDate = new Date(document.lastModified);
         lastUpdatedElement.textContent = Number.isNaN(modifiedDate.getTime())
-            ? document.lastModified
-            : modifiedDate.toLocaleString();
+            ? `${document.lastModified} UTC`
+            : modifiedDate.toUTCString().replace('GMT', 'UTC');
     }
 });
