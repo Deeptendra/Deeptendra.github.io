@@ -57,4 +57,12 @@ document.addEventListener('DOMContentLoaded', () => {
         el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
         observer.observe(el);
     });
+
+    const lastUpdatedElement = document.getElementById('last-updated-value');
+    if (lastUpdatedElement) {
+        const modifiedDate = new Date(document.lastModified);
+        lastUpdatedElement.textContent = Number.isNaN(modifiedDate.getTime())
+            ? document.lastModified
+            : modifiedDate.toLocaleString();
+    }
 });
